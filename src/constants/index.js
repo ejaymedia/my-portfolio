@@ -1,8 +1,4 @@
 import {
-  c,
-  python,
-  java,
-  cpp,
   javascript,
   html,
   css,
@@ -13,7 +9,7 @@ import {
   edunet,
   weatherpedia,
   termpw,
-  payloadmaster,
+  robofriends,
   threejs,
   mhft,
   sketcher,
@@ -38,17 +34,17 @@ export const navLinks = [
 ];
 
 export const services = [
-  { title: "C", icon: c },
-  { title: "C++", icon: cpp },
-  { title: "Python", icon: python },
-  { title: "Java", icon: java },
+  { title: "HTML 5", icon: html },
+  { title: "CSS", icon: css },
+  { title: "JavaScript", icon: javascript },
+  { title: "React JS", icon: reactjs },
 ];
 
 export const technologies = [
   { name: "HTML 5", icon: html },
   { name: "CSS 3", icon: css },
   { name: "JavaScript", icon: javascript },
-  { name: "Rect JS", icon: reactjs },
+  { name: "React JS", icon: reactjs },
   { name: "Tailwind CSS", icon: tailwind },
   { name: "Node JS", icon: nodejs },
   { name: "Three JS", icon: threejs },
@@ -99,9 +95,9 @@ export const projects = [
     description:
       "Web-based platform that allows users to access weather information for their location by entering it in the search field",
     tags: [
-      { name: "Javascript", color: "blue-text-gradient" },
-      { name: "HTML", color: "green-text-gradient" },
-      { name: "bootstrap 5.3.0", color: "pink-text-gradient" },
+      { name: "HTML", color: "blue-text-gradient" },
+      { name: "CSS", color: "green-text-gradient" },
+      { name: "JavaScript", color: "pink-text-gradient" },
       { name: "Weather API by API Ninjas", color: "yellow-text-gradient" },
     ],
     image: weatherpedia,
@@ -133,14 +129,18 @@ export const projects = [
       "https://github.com/lohitkolluri/mental_health_fitness_tracker",
   },
   {
-    name: "PayloadMaster",
+    name: "RoboFriends",
     description:
-      "Tool to automate payload creation using the Metasploit framework",
+      "A React app that fetches user data and generates unique robot avatars, with a real-time search feature to filter robots dynamically.",
     tags: [
-      { name: "shell", color: "blue-text-gradient" },
+      { name: "Reaact", color: "blue-text-gradient" },
+      { name: "CSS", color: "green-text-gradient" },
+      { name: "JavaScript", color: "pink-text-gradient" },
+      { name: "RoboHash API", color: "pink-text-gradient" },
+      { name: "JSONPlaceholder API", color: "pink-text-gradient" },
     ],
-    image: payloadmaster,
-    source_code_link: "https://github.com/lohitkolluri/PayloadMaster",
+    image: robofriends,
+    source_code_link: "https://robo-friends-swart.vercel.app/",
   },
   {
     name: "CompileVortex",

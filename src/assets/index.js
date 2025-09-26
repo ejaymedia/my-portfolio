@@ -3,16 +3,10 @@ import mathwork from "./company/mathwork.png";
 import edunet from "./company/edunet.png";
 import eduskill from "./company/eduskill.png";
 
-// Import tech stack images
-import python from "./tech-stack/python.png";
-import c from "./tech-stack/c.png";
-import cpp from "./tech-stack/cpp.png";
-import java from "./tech-stack/java.png";
-
 // Import project images
 import weatherpedia from "./projects/WeatherPedia.png";
 import termpw from "./projects/termpw.png";
-import payloadmaster from "./projects/payloadmaster.png";
+import robofriends from "./projects/robo-friends-swart-vercel-app.jpg";
 import mhft from "./projects/mhft.png";
 import sketcher from "./projects/sketcher.png";
 import CompileVortex from "./projects/CompileVortex.png";
@@ -36,10 +30,6 @@ import close from "./close.svg";
 export {
   mathwork,
   edunet,
-  python,
-  c,
-  cpp,
-  java,
   github,
   css,
   git,
@@ -51,7 +41,7 @@ export {
   threejs,
   weatherpedia,
   termpw,
-  payloadmaster,
+  robofriends,
   mhft,
   sketcher,
   CompileVortex,
