@@ -20,27 +20,27 @@ const Navbar = () => {
   }, [toggle]);
 
   const renderNavLinks = (isSecondary) => (
-    <ul className={`list-none ${isSecondary ? 'flex sm:hidden' : 'hidden sm:flex'} flex-row gap-6`}>
+    <ul
+      className={`list-none ${
+        isSecondary ? 'flex flex-col gap-6 sm:hidden' : 'hidden sm:flex'
+      } flex-row gap-6`}
+    >
       {navLinks.map((link) => (
         <li
           key={link.id}
           className={`${
-            active === link.title ? 'text-white' : isSecondary ? 'text-secondary' : 'text-white'
+            active === link.title ? 'text-white' : isSecondary ? 'text-white/90' : 'text-white'
           } hover:text-white text-[20px] font-medium cursor-pointer`}
           onClick={() => {
             setActive(link.title);
-            if (isSecondary) {
-              setToggle(false);
-            }
+            if (isSecondary) setToggle(false);
           }}
         >
           <a href={`#${link.id}`}>{link.title}</a>
         </li>
       ))}
       <li
-        className={`text-${
-          isSecondary ? 'secondary' : 'white'
-        } hover:text-white text-[20px] font-medium cursor-pointer`}
+        className="text-white/90 hover:text-white text-[20px] font-medium cursor-pointer"
       >
         <button onClick={toggleResume}>Resume</button>
       </li>
@@ -68,20 +68,18 @@ const Navbar = () => {
             </p>
           </Link>
           {renderNavLinks(false)}
-          <div className="sm:hidden flex flex-1 justify-end items-center">
+          <div className="sm:hidden flex flex-1 justify-end items-center relative">
             <img
               src={toggle ? close : menu}
               alt="menu"
-              className="w-[28px] h-[18px] object-contain cursor-pointer"
+              className="w-[28px] h-[18px] object-contain cursor-pointer z-30"
               onClick={() => setToggle(!toggle)}
             />
-            <div
-              className={`p-4 black-gradient absolute top-14 right-0 mx-2 my-2 min-w-[120px] z-10 rounded-xl foggy-glass ${
-                toggle ? 'flex' : 'hidden'
-              }`}
-            >
-              {renderNavLinks(true)}
-            </div>
+            {toggle && (
+              <div className="fixed top-0 right-0 h-screen w-2/3 max-w-xs z-20 backdrop-blur-md bg-white/20 p-6 flex flex-col gap-6 overflow-y-auto">
+                {renderNavLinks(true)}
+              </div>
+            )}
           </div>
         </div>
       </nav>
