@@ -6,16 +6,16 @@ import {
   tailwind,
   nodejs,
   git,
-  edunet,
-  weatherpedia,
+  ejaymediavercelapp,
   termpw,
   robofriends,
   threejs,
   mhft,
   sketcher,
-  mathwork,
   CompileVortex,
-  eduskill,
+  weather,
+  nHub,
+  nta2,
 } from "../assets";
 
 export const navLinks = [
@@ -53,76 +53,64 @@ export const technologies = [
 
 export const experiences = [
   {
-    title: "AI/ML Intern",
-    company_name: "EduSkill Foundation | AWS Academy | AICTE",
-    icon: eduskill,
+    title: "Frontend Development Trainee",
+    company_name: "nHub Foundation | Jos, Nigeria",
+    icon: nHub,
     iconBg: "#161329",
-    date: "Sep 2023 - Nov 2023",
+    date: "January 2021 - March 2021",
     points: [
-      "Acquired hands-on knowledge of AWS Cloud Foundation, delving into cloud infrastructure, services, and deployment.",
-      "also gaining a solid foundation in Machine Learning, covering topics like algorithms, data analysis, and model building.",
+      "Completed an intensive frontend development training program.",
+      "Built projects using HTML, CSS, Bootstrap, JavaScript, and React.",
+      "Enhanced problem-solving and UI development skills through hands-on projects.",
     ],
   },
   {
-    title: "Mathwork Ai Virtual Intern",
-    company_name: "Mathwork | AICTE",
-    icon: mathwork,
+    title: "Intern (Engineering Department)",
+    company_name: "Nigerian Television Authority (NTA 2) | Lagos, Nigeria",
+    icon: nta2,
     iconBg: "#161329",
-    date: "May 2023 - Sep 2023",
+    date: "June 2024 - November 2024",
     points: [
-      "Completed virtual internship, gaining a strong foundation in MATLAB, including data analysis and processing.",
-      "Acquired practical skills in image and signal processing, including segmentation, batch processing, and spectral analysis.",
-      "Developed expertise in machine learning models for clustering, classification, and regression, and customized deep learning techniques for image classification.",
-    ],
-  },
-  {
-    title: "Artificial Intelligence Intern",
-    company_name: "Edunet Foundation | IBM SkillsBuild | AICTE",
-    icon: edunet,
-    iconBg: "#161329",
-    date: "June 2023 - July 2023",
-    points: [
-      "Engineered a comprehensive Mental Health Fitness Tracker ML model utilizing Python and scikit-learn.",
-      "Maximized the model's performance by refining model parameters and employing ensemble methods, yielding an outstanding accuracy percentage of 98.50%.",
-      "Leveraged 12 regression algorithms to attain precise outcomes in analyzing and predicting mental fitness levels across 150+ countries.",
+      "Gained hands-on experience in a professional technical environment.",
+      "Collaborated with engineers and supported operational tasks in broadcasting technology.",
+      "Developed problem-solving, adaptability, and teamwork skills in a fast-paced setting.",
     ],
   },
 ];
 
 export const projects = [
   {
-    name: "WeatherPedia",
+    name: "WhatsApp TV Website",
     description:
-      "Web-based platform that allows users to access weather information for their location by entering it in the search field",
+      "A modern, responsive site designed to promote and engage subscribers with updates, promotions, and contact access.",
     tags: [
       { name: "HTML", color: "blue-text-gradient" },
       { name: "CSS", color: "green-text-gradient" },
       { name: "JavaScript", color: "pink-text-gradient" },
-      { name: "Weather API by API Ninjas", color: "yellow-text-gradient" },
     ],
-    image: weatherpedia,
-    source_code_link: "https://github.com/lohitkolluri/WeatherPedia",
+    image: ejaymediavercelapp,
+    source_code_link: "https://ejaymedia.vercel.app/",
   },
   {
-    name: "Terminal Like Portfolio Website",
+    name: "Redmall Microfinance Limited Website",
     description:
-      "A terminal themed portfolio website that allows users to type into the terminal and use commands like a real terminal.",
+      "A corporate site promoting microfinance services, showcasing loan products, company info, testimonials, and easy application access.",
     tags: [
       { name: "HTML", color: "blue-text-gradient" },
-      { name: "css", color: "green-text-gradient" },
-      { name: "Javascript", color: "pink-text-gradient" },
+      { name: "CSS", color: "green-text-gradient" },
+      { name: "JavaScript", color: "pink-text-gradient" },
     ],
     image: termpw,
     source_code_link: "https://github.com/lohitkolluri/lohitkolluri.github.io",
   },
   {
-    name: "Mental Health Fitness Tracker",
+    name: "Password Generator App",
     description:
-      "ML model that utilizes regression techniques to provide insights into mental health and make predictions based on the available data.",
+      "A React + Tailwind app that creates secure, customizable passwords with a sleek, modern UI.",
     tags: [
-      { name: "Machine Learning", color: "blue-text-gradient" },
-      { name: "Jupyter Notebook", color: "green-text-gradient" },
-      { name: "Regression Algorithms", color: "pink-text-gradient" },
+      { name: "React", color: "blue-text-gradient" },
+      { name: "TailwindCSS", color: "green-text-gradient" },
+      { name: "JavaScript", color: "pink-text-gradient" },
     ],
     image: mhft,
     source_code_link:
@@ -136,35 +124,47 @@ export const projects = [
       { name: "Reaact", color: "blue-text-gradient" },
       { name: "CSS", color: "green-text-gradient" },
       { name: "JavaScript", color: "pink-text-gradient" },
-      { name: "RoboHash API", color: "pink-text-gradient" },
       { name: "JSONPlaceholder API", color: "pink-text-gradient" },
     ],
     image: robofriends,
     source_code_link: "https://robo-friends-swart.vercel.app/",
   },
   {
-    name: "CompileVortex",
+    name: "To-Do List App",
     description:
-      "Tool to automate payload creation using the Metasploit framework",
+      "A clean React app with a modern UI that lets users add, edit, and delete tasks for easy daily planning.",
     tags: [
-      { name: "Javascript", color: "blue-text-gradient" },
+      { name: "Reaact", color: "blue-text-gradient" },
       { name: "CSS", color: "green-text-gradient" },
-      { name: "HTML", color: "pink-text-gradient" },
+      { name: "JavaScript", color: "pink-text-gradient" },
     ],
     image: CompileVortex,
     source_code_link: "https://github.com/lohitkolluri/CompileVortex",
   },
   {
-    name: "Sketcher",
+    name: "Quiz App",
     description:
-      "Convert an input image to a pencil sketch using OpenCV and Matplotlib libraries.",
+      "A mobile app created with React Native that fetches quiz questions from an API, with score tracking and a smooth mobile UI.",
     tags: [
-      { name: "OpenCV", color: "blue-text-gradient" },
-      { name: "Matplotlib", color: "green-text-gradient" },
-      { name: "Python", color: "pink-text-gradient" },
+      { name: "React Native", color: "blue-text-gradient" },
+      { name: "JavaScript", color: "green-text-gradient" },
+      { name: "API Integration", color: "pink-text-gradient" },
     ],
 
     image: sketcher,
+    source_code_link: "https://github.com/lohitkolluri/Image_to_Pencil_Sketch_App",
+  },
+  {
+    name: "Weather App",
+    description:
+      "A mobile app created with React Native with live weather updates, city search suggestions, and a clean, user-friendly interface.",
+    tags: [
+      { name: "React Native", color: "blue-text-gradient" },
+      { name: "JavaScript", color: "green-text-gradient" },
+      { name: "API Integration", color: "pink-text-gradient" },
+    ],
+
+    image: weather,
     source_code_link: "https://github.com/lohitkolluri/Image_to_Pencil_Sketch_App",
   },
 ];
