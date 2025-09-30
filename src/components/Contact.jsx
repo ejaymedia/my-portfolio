@@ -67,7 +67,7 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_afum368",
+        "service_hri70jq",
         "template_hk3p79k",
         {
           from_name: form.name,
