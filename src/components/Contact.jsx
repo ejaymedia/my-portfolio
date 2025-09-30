@@ -67,16 +67,16 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_r2i0by4",
-        "template_mf5x3bh",
+        "service_afum368",
+        "template_hk3p79k",
         {
           from_name: form.name,
-          to_name: "Elijah Erioluwa Afolabi",
+          to_name: "Elijah Afolabi",
           from_email: form.email,
           to_email: "eliafoeri@gmail.com",
           message: form.message,
         },
-        "p-gXzzyvEhPaJ0XA-"
+        "b7V1W4hJRzkU8OrHy"
       )
       .then(
         () => {
