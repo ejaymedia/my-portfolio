@@ -68,7 +68,7 @@ const Contact = () => {
     emailjs
       .send(
         "service_hri70jq",
-        "template_hk3p79k",
+        "template_c3hbxz8",
         {
           title: "New Message",
           name: form.name,
@@ -76,7 +76,7 @@ const Contact = () => {
           message: form.message,
           time: new Date().toLocaleString(),
         },
-        "b7V1W4hJRzkU8OrHy"
+        "YewPpbeatV8JNT92I"
       )
       .then(
         () => {
