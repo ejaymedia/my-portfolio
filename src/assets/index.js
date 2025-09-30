@@ -4,11 +4,11 @@ import nta2 from "./company/nta2.png";
 
 // Import project images
 import ejaymediavercelapp from "./projects/ejaymedia-vercel-app.jpg";
-import termpw from "./projects/redmall-microfinance-limited-vercel-app.jpg";
+import redmall from "./projects/redmall-microfinance-limited-vercel-app.jpg";
 import robofriends from "./projects/robo-friends-swart-vercel-app.jpg";
-import mhft from "./projects/password-generator-app-pi-gold-vercel-app.jpg";
-import sketcher from "./projects/quiz-app.jpg";
-import CompileVortex from "./projects/todos-list-app-vercel-app.jpg";
+import pga from "./projects/password-generator-app-pi-gold-vercel-app.jpg";
+import quiz from "./projects/quiz-app.jpg";
+import todos from "./projects/todos-list-app-vercel-app.jpg";
 import weather from "./projects/weather-app.jpg";
 
 // Import tech logos
@@ -38,11 +38,11 @@ export {
   tailwind,
   threejs,
   ejaymediavercelapp,
-  termpw,
+  redmall,
   robofriends,
-  mhft,
-  sketcher,
-  CompileVortex,
+  pga,
+  quiz,
+  todos,
   weather,
   logo,
   menu,

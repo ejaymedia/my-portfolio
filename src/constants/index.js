@@ -7,12 +7,12 @@ import {
   nodejs,
   git,
   ejaymediavercelapp,
-  termpw,
+  redmall,
   robofriends,
   threejs,
-  mhft,
-  sketcher,
-  CompileVortex,
+  pga,
+  quiz,
+  todos,
   weather,
   nHub,
   nta2,
@@ -100,8 +100,8 @@ export const projects = [
       { name: "CSS", color: "green-text-gradient" },
       { name: "JavaScript", color: "pink-text-gradient" },
     ],
-    image: termpw,
-    source_code_link: "https://github.com/lohitkolluri/lohitkolluri.github.io",
+    image: redmall,
+    source_code_link: "https://redmall-microfinance-limited.vercel.app",
   },
   {
     name: "Password Generator App",
@@ -112,9 +112,9 @@ export const projects = [
       { name: "TailwindCSS", color: "green-text-gradient" },
       { name: "JavaScript", color: "pink-text-gradient" },
     ],
-    image: mhft,
+    image: pga,
     source_code_link:
-      "https://github.com/lohitkolluri/mental_health_fitness_tracker",
+      "https://password-generator-app-pi-gold.vercel.app/",
   },
   {
     name: "RoboFriends",
@@ -138,8 +138,8 @@ export const projects = [
       { name: "CSS", color: "green-text-gradient" },
       { name: "JavaScript", color: "pink-text-gradient" },
     ],
-    image: CompileVortex,
-    source_code_link: "https://github.com/lohitkolluri/CompileVortex",
+    image: todos,
+    source_code_link: "http://ejay-todos-list-app.vercel.app/",
   },
   {
     name: "Quiz App",
@@ -151,8 +151,8 @@ export const projects = [
       { name: "API Integration", color: "pink-text-gradient" },
     ],
 
-    image: sketcher,
-    source_code_link: "https://github.com/lohitkolluri/Image_to_Pencil_Sketch_App",
+    image: quiz,
+    source_code_link: "https://github.com/ejaymedia/quiz-app",
   },
   {
     name: "Weather App",
@@ -165,6 +165,6 @@ export const projects = [
     ],
 
     image: weather,
-    source_code_link: "https://github.com/lohitkolluri/Image_to_Pencil_Sketch_App",
+    source_code_link: "https://github.com/ejaymedia/weather-app",
   },
 ];
