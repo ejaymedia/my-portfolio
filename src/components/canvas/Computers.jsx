@@ -5,8 +5,12 @@ import { DRACOLoader } from "three/addons/loaders/DRACOLoader";
 import CanvasLoader from "../Loader";
 
 const ComputerModel = ({ isMobile }) => {
+  const modelPath = isMobile
+    ? "./desktop_pc/desktop_pc_mobile.glb"
+    : "./desktop_pc/desktop_pc_high.glb";
+
   const { scene } = useGLTF(
-    "./desktop_pc/scene.gltf",
+    modelPath,
     undefined,
     (loader) => {
       const dracoLoader = new DRACOLoader();
@@ -26,6 +30,7 @@ const ComputerModel = ({ isMobile }) => {
         shadow-mapSize={1024}
       />
       <pointLight intensity={1} />
+
       <primitive
         object={scene}
         scale={isMobile ? 0.7 : 0.75}
@@ -43,16 +48,14 @@ const ComputersCanvas = () => {
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 500px)");
+    setIsMobile(mediaQuery.matches);
 
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
     };
 
     mediaQuery.addEventListener("change", handleMediaQueryChange);
-
-    return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
-    };
+    return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
   }, []);
 
   return (
@@ -71,6 +74,7 @@ const ComputersCanvas = () => {
         />
         <MemoizedComputerModel isMobile={isMobile} />
       </Suspense>
+
       <Preload all />
     </Canvas>
   );
