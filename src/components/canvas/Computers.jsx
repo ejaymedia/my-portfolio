@@ -25,18 +25,19 @@ const ComputerModel = ({ isMobile }) => {
         position={[-20, 50, 10]}
         angle={0.12}
         penumbra={1}
-        intensity={1}
-        castShadow
-        shadow-mapSize={1024}
+        intensity={isMobile ? 0.6 : 1}
+        castShadow={!isMobile}
+        shadow-mapSize={isMobile ? 512 : 1024}
       />
       <pointLight intensity={1} />
-
-      <primitive
-        object={scene}
-        scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
-      />
+      {scene && (
+        <primitive
+          object={scene}
+          scale={isMobile ? 0.5 : 0.75}
+          position={isMobile ? [0, -2.8, -1.8] : [0, -3.25, -1.5]}
+          rotation={[-0.01, -0.2, -0.1]}
+        />
+      )}
     </mesh>
   );
 };
@@ -50,13 +51,24 @@ const ComputersCanvas = () => {
     const mediaQuery = window.matchMedia("(max-width: 500px)");
     setIsMobile(mediaQuery.matches);
 
-    const handleMediaQueryChange = (event) => {
-      setIsMobile(event.matches);
-    };
-
+    const handleMediaQueryChange = (event) => setIsMobile(event.matches);
     mediaQuery.addEventListener("change", handleMediaQueryChange);
+
     return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
   }, []);
+
+  if (isMobile) {
+    return (
+      <div className="w-full flex justify-center items-center mt-10">
+        <img
+          src="./desktop_pc/desktop.png"
+          alt="PC preview"
+          className="w-[80%] h-auto object-contain"
+          loading="lazy"
+        />
+      </div>
+    );
+  }
 
   return (
     <Canvas
@@ -74,7 +86,6 @@ const ComputersCanvas = () => {
         />
         <MemoizedComputerModel isMobile={isMobile} />
       </Suspense>
-
       <Preload all />
     </Canvas>
   );
