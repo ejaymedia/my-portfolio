@@ -12,6 +12,7 @@ import {
   threejs,
   pga,
   quiz,
+  church,
   todos,
   weather,
   nHub,
@@ -121,7 +122,7 @@ export const projects = [
     description:
       "A React app that fetches user data and generates unique robot avatars, with a real-time search feature to filter robots dynamically.",
     tags: [
-      { name: "Reaact", color: "blue-text-gradient" },
+      { name: "React", color: "blue-text-gradient" },
       { name: "CSS", color: "green-text-gradient" },
       { name: "JavaScript", color: "pink-text-gradient" },
       { name: "JSONPlaceholder API", color: "pink-text-gradient" },
@@ -134,12 +135,25 @@ export const projects = [
     description:
       "A clean React app with a modern UI that lets users add, edit, and delete tasks for easy daily planning.",
     tags: [
-      { name: "Reaact", color: "blue-text-gradient" },
+      { name: "React", color: "blue-text-gradient" },
       { name: "CSS", color: "green-text-gradient" },
       { name: "JavaScript", color: "pink-text-gradient" },
     ],
     image: todos,
     source_code_link: "http://ejay-todos-list-app.vercel.app/",
+  },
+  {
+    name: "Church Website",
+    description:
+      "A modern and responsive church website built with React and Firebase, featuring online service streaming, donation uploads, and an admin dashboard for managing site content.",
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "TailwindCSS", color: "green-text-gradient" },
+      { name: "JavaScript", color: "pink-text-gradient" },
+      { name: "Firebase (Firestore, Auth, Storage", color: "pink-text-gradient" },
+    ],
+    image: church,
+    source_code_link: "https://ejaymedia.github.io/church-website/",
   },
   {
     name: "Quiz App",
