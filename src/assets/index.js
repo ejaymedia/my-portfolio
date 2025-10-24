@@ -10,7 +10,7 @@ import pga from "./projects/password-generator-app-pi-gold-vercel-app.jpg";
 import quiz from "./projects/quiz-app.jpg";
 import todos from "./projects/todos-list-app-vercel-app.jpg";
 import weather from "./projects/weather-app.jpg";
-import church from "./projects/church-website";
+import church from "./projects/church-website.jpg";
 
 // Import tech logos
 import css from "./tech/css.png";
