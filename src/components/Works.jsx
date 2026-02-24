@@ -20,15 +20,22 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
 
   const CardContent = (
     <>
-      <div className="relative w-full h-[230px]">
+      <div
+        className="relative w-full h-[230px] cursor-pointer"
+        onClick={() => window.open(source_code_link, "_blank")}
+      >
         <img
           src={image}
           alt="project_image"
           className="w-full h-full object-cover rounded-2xl"
         />
+
         <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
           <div
-            onClick={() => window.open(source_code_link, "_blank")}
+            onClick={(e) => {
+              e.stopPropagation(); // prevents double trigger
+              window.open(source_code_link, "_blank");
+            }}
             className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
           >
             <img
@@ -99,8 +106,7 @@ const Works = () => {
         >
           Following projects showcase my skills and experience through examples
           of my work. Each project is briefly described with links to main
-          website or repository using the GitHub button at the top right of each
-          project preview.
+          website or repository.
         </motion.p>
       </div>
 

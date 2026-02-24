@@ -11,6 +11,8 @@ import quiz from "./projects/quiz-app.jpg";
 import todos from "./projects/todos-list-app-vercel-app.jpg";
 import weather from "./projects/weather-app.jpg";
 import church from "./projects/church-website.jpg";
+import campuscrib from "./projects/campuscrib.jpg";
+import kloze from "./projects/kloze.jpg";
 
 // Import tech logos
 import css from "./tech/css.png";
@@ -51,4 +53,6 @@ export {
   close,
   nHub,
   nta2,
+  campuscrib,
+  kloze,
 };

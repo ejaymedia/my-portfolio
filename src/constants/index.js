@@ -17,6 +17,8 @@ import {
   weather,
   nHub,
   nta2,
+  campuscrib,
+  kloze,
 } from "../assets";
 
 export const navLinks = [
@@ -150,10 +152,36 @@ export const projects = [
       { name: "React", color: "blue-text-gradient" },
       { name: "TailwindCSS", color: "green-text-gradient" },
       { name: "JavaScript", color: "pink-text-gradient" },
-      { name: "Firebase (Firestore, Auth, Storage", color: "pink-text-gradient" },
+      { name: "Firebase (Firestore, Auth, Storage)", color: "pink-text-gradient" },
     ],
     image: church,
     source_code_link: "https://ejaymedia.github.io/church-website/",
+  },
+  {
+    name: "Hostel-Booking Website",
+    description:
+      "Multi-role hostel booking platform with dashboards for students, landlords, and admins. Features booking management, filtering, and smooth navigation.",
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "TailwindCSS", color: "green-text-gradient" },
+      { name: "JavaScript", color: "pink-text-gradient" },
+      { name: "Firebase (Firestore, Auth, Storage)", color: "pink-text-gradient" },
+    ],
+    image: campuscrib,
+    source_code_link: "https://ejaymedia.github.io/campuscrib/",
+  },
+  {
+    name: "Software Security Platform",
+    description:
+      "Landing page that automates employee offboarding. Features responsive design, smooth animations, and a conversion-focused UI.",
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "TailwindCSS", color: "green-text-gradient" },
+      { name: "JavaScript", color: "pink-text-gradient" },
+      { name: "Framer Motion", color: "orange-text-gradient" },
+    ],
+    image: kloze,
+    source_code_link: "https://ejaymedia.github.io/kloze/",
   },
   {
     name: "Quiz App",
